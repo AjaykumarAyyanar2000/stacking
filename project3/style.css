@@ -1,0 +1,137 @@
+     body
+{
+    margin : 0;
+    background: black;
+}
+ .draggable {
+            -moz-animation-duration: 5s;
+            -webkit-animation-duration: 5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+         }
+  @-moz-keyframes slidein {
+            from {
+               margin-left: 0px;
+               width: 100px;
+            }
+            to {
+               margin-left:170px;
+               width: 100px
+            }
+         }
+        @-webkit-keyframes slidein {
+            from {
+               margin-left: 0px;
+               width:  100px
+            }
+            to {
+               margin-left:170px;
+               width: 100px
+            }
+         }
+/*
+ .draggable.change {
+            -moz-animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+         }
+  @-moz-keyframes slidein {
+            from {
+               margin-left: 170px;
+               width: 100px;
+            }
+            to {
+               margin-left:0px;
+               width: 100px
+            }
+         }
+        @-webkit-keyframes slidein {
+            from {
+               margin-left: 170px;
+               width:  100px
+            }
+            to {
+               margin-left: 0px;
+               width: 100px
+            }
+         }*/
+/*.timeup
+
+    {
+            -moz-animation-duration: 3s;
+            -webkit-animation-duration: 3s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+         }
+       /*  @-moz-keyframes slidein {
+            from {
+               margin-left: 0px;
+               width: 100px;
+            }
+            to {
+               margin-left:1200px;
+               width: 100px
+            }
+         }*/
+        /* @-webkit-keyframes slidein {
+            from {
+               margin-left: 0px;
+               width:  100px
+            }
+            to {
+               margin-left:170px;
+               width: 100px
+            }
+         }*/
+
+    
+.container
+{
+    background-color: #333;
+    padding: 1px;
+    margin-top : 5px;
+    width:1200px;
+    height: 300px;
+    display: block;
+    
+}
+.draggable
+{
+    padding : 1px;
+    background-color: red;
+    border: 1px solid black;
+    cursor: move;
+    height: 100px;
+    width: 100px;
+    float : left;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: block;
+
+}
+.draggablenot
+{
+    padding : 1px;
+    background-color: orange;
+    border: 1px solid black;
+    cursor: move;
+    height : 150px;
+    width :200px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: block;
+}
+    
+.draggable.dragging
+{
+    opacity: 0.5;
+    display: block;
+}
+.over
+{
+    display :none;
+}
